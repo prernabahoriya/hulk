@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR PRANIT ONLY</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do you wanna go out with me?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/XA3973BWk2rCs9P57Y/200.webp?cid=ecf05e47m03nsrkquuf578ekw7bxvb62cdj0ibq3k4xojuk9&ep=v1_stickers_search&rid=200.webp&ct=s">
+        </div>
+        <div class="button">
+            <button class="btn" id="yesbutton" onclick="nextPage()">YES</button>
+            <button class="btn" id="nobutton" onmouseover="moveButton()">NO</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('.btn').offsetWidth);
+                    var y = Math.random() * (window.innerHeight - document.getElementById('.btn').offsetHeight);
+                    document.getElementById('.btn').style.left = `${x}px`;
+                    document.getElementById('.btn').style.top = `${y}px`;
+                }
+            </script>
+           
+        </div>
+    </div>
+</body>
+</html>
